@@ -1,9 +1,10 @@
 .container {
   position: relative;
   height: 80vh; /* Adjust for screen height */
-  background-image: url("/chicagoSkyline.webp"); /* Replace with your image path */
-  background-size: cover;
+  background-image: url("/billboard2.webp"); /* Replace with your image path */
+  background-size: cover; /* Ensure the image covers the entire container */
   background-position: center;
+  background-repeat: no-repeat; /* Prevent background image from repeating */
   display: flex;
   align-items: center;
   justify-content: center;

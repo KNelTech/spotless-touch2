@@ -1,3 +1,11 @@
 main {
   padding: 20px;
 }
+
+.about {
+  background-color: #37c3ffc1;
+  padding: 20px;
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.331);
+}

@@ -1,5 +1,6 @@
 import NavBar from './components/NavBar';
 import Billboard from './components/billboard';
+import TextBox from './components/textBox';
 import './App.css';
 
 function App() {
@@ -8,8 +9,9 @@ function App() {
       <NavBar />
       <Billboard />
       <main>
-        <h2>Welcome to Spotless Touch!</h2>
-        <p>Your trusted cleaning solution in Chicago.</p>
+        <TextBox className="about" readOnly>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </TextBox>
       </main>
     </div>
   );
