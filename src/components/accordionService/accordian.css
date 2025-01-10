@@ -1,0 +1,18 @@
+.accordion-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-width: 300px;
+}
+
+.accordion-container > div {
+  min-width: 50%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.578);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.accordianUL {
+  padding-left: 20px;
+}
