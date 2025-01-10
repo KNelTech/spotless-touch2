@@ -1,32 +1,70 @@
 .nav {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
-  padding: 10px;
-  background-color: #1e90ff;
-  position: fixed;
-  height: 60px;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 2;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 10px 20px;
+  background-color: #1a79d7;
+  color: #fff;
+  position: fixed; /* Fix the navbar at the top */
+  top: 0; /* Position it at the top */
+  width: 100%; /* Make it span the full width */
+  z-index: 2; /* Ensure it stays above other content */
 }
 
 .logo {
-  color: #fff;
-  font-size: 24px;
-  font-weight: bold;
+  display: flex;
+  align-items: center;
+}
+
+.logoImage {
+  margin-right: 10px;
+  width: 25px;
+  height: 30px;
 }
 
 .navLinks {
   list-style: none;
   display: flex;
-  gap: 15px;
+  gap: 20px;
 }
 
 .link {
   color: #fff;
   text-decoration: none;
-  font-size: 18px;
+}
+
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.hamburger div {
+  width: 25px;
+  height: 3px;
+  background-color: #fff;
+  margin: 4px 0;
+}
+
+@media (max-width: 768px) {
+  .navLinks {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    right: 10px;
+    padding: 10px;
+    align-items: center; /* Changed to center */
+    background-color: #1a79d7;
+    border-radius: 5px;
+  }
+
+  .navLinks.active {
+    display: flex;
+    z-index: 3;
+  }
+
+  .hamburger {
+    display: flex;
+  }
 }

@@ -1,9 +1,10 @@
 .container {
   position: relative;
   height: 80vh; /* Adjust for screen height */
-  background-image: url("/public/chicagoSkyline.webp"); /* Replace with your image path */
-  background-size: cover;
+  background-image: url("/billboard2.webp"); /* Replace with your image path */
+  background-size: cover; /* Ensure the image covers the entire container */
   background-position: center;
+  background-repeat: no-repeat; /* Prevent background image from repeating */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -24,6 +25,10 @@
   position: relative;
   z-index: 2;
   text-align: center;
+  background-color: rgba(55, 195, 255, 0.404);
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: rgba(0, 0, 0, 0.478) 1px 1px 4px;
 }
 
 .slogan {
@@ -40,12 +45,14 @@
 .button {
   padding: 10px 20px;
   font-size: 18px;
-  background-color: #1e90ff;
+  background-color: #1a79d7;
   color: #fff;
   border: none;
+  box-shadow: rgba(0, 0, 0, 0.478) 1px 1px 4px;
   border-radius: 5px;
   cursor: pointer;
   transition: background-color 0.3s;
+  border-radius: 10px;
 }
 
 .button:hover {
