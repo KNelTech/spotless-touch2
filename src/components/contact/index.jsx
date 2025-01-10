@@ -147,6 +147,7 @@ const Contact = () => {
   //TODO: Debug or adjust values for each field as needed
   // Create email template and sending functionality
   // Fix formatting of form
+  // Mobile support
   // Add type validation to each field?
   // Add error handling for each field?
   
