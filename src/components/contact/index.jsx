@@ -54,8 +54,8 @@ const Contact = () => {
     }
 
     return (
-        <Stack spacing={2}>
-            <h1>Contact Us</h1>
+        <Stack className="contact-form" spacing={2}>
+            <h1 className="contact-title" id="contact">Contact Us</h1>
             <TextField
                 id="outlined-basic"
                 label="Name"
