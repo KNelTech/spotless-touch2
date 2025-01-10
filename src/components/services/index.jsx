@@ -36,6 +36,7 @@ function Services() {
         <div className="services">
             {SERVICES.map((service, index) => (
                 <Service
+                    key={index}
                     name={service.name}
                     description={service.description}
                     pricing={service.pricing}
@@ -44,6 +45,8 @@ function Services() {
         </div>
     );
 }
+
+import PropTypes from 'prop-types';
 
 function Service({ name, description, pricing }) {
     return (
