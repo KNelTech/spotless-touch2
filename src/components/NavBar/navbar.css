@@ -8,7 +8,7 @@
   position: fixed; /* Fix the navbar at the top */
   top: 0; /* Position it at the top */
   width: 100%; /* Make it span the full width */
-  z-index: 2; /* Ensure it stays above other content */
+  z-index: 4; /* Ensure it stays above other content */
 }
 
 .logo {

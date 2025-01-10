@@ -4,7 +4,7 @@
   background-image: url("/billboard2.webp"); /* Replace with your image path */
   background-size: cover; /* Ensure the image covers the entire container */
   background-position: center;
-  background-repeat: no-repeat; /* Prevent background image from repeating */
+  background-repeat: no-repeat;
   display: flex;
   align-items: center;
   justify-content: center;
