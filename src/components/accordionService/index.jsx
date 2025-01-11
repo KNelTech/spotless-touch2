@@ -1,10 +1,8 @@
 import Accordion from '@mui/material/Accordion';
 import AccordionSummary from '@mui/material/AccordionSummary';
 import AccordionDetails from '@mui/material/AccordionDetails';
-import AccordionActions from '@mui/material/AccordionActions';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import Typography from '@mui/material/Typography';
-import Button from '@mui/material/Button';
 import './accordian.css';
 
 const AccordionUsage = () => {
@@ -57,7 +55,7 @@ return (
                     </ul>
                 </AccordionDetails>
             </Accordion>
-            <Accordion defaultExpanded>
+            <Accordion>
                 <AccordionSummary
                     expandIcon={<ExpandMoreIcon />}
                     aria-controls="panel3-content"

@@ -1,4 +1,4 @@
-.accordion-container {
+/* .accordion-container {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -15,4 +15,70 @@
 
 .accordianUL {
   padding-left: 20px;
+}
+ */
+.css-1808mag-MuiPaper-root-MuiAccordion-root::before {
+  display: none !important;
+}
+
+.accordion-container {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Style for each accordion */
+.MuiAccordion-root {
+  margin: 10px 0 !important;
+  border: 1px solid #c6c5c5 !important;
+  border-radius: 10px !important;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.215) !important;
+}
+
+/* Header styling */
+.MuiAccordionSummary-root {
+  background-color: #f5f8ff !important;
+  transition: background-color 0.2s;
+  border-radius: 10px !important;
+}
+
+.MuiAccordionSummary-root:hover {
+  background-color: #e8efff !important;
+}
+
+/* Style the title */
+.MuiAccordionSummary-root .MuiTypography-root {
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #2c3e50;
+}
+
+/* Style the list */
+.accordianUL {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.accordianUL li {
+  padding: 8px 0;
+  position: relative;
+  padding-left: 20px;
+}
+
+.accordianUL li:before {
+  content: "•";
+  color: #3182ce;
+  position: absolute;
+  left: 0;
+}
+
+/* Pricing items styling for each accordion */
+.accordion-container > div > :nth-child(1) .accordianUL li:nth-child(n + 5),
+.accordion-container > div > :nth-child(2) .accordianUL li:nth-child(n + 7),
+.accordion-container > div > :nth-child(3) .accordianUL li:nth-child(n + 8) {
+  background-color: #f8fafc;
+  padding: 8px 20px;
+  margin: 2px 0;
+  border-radius: 5px;
 }
