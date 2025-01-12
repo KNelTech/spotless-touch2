@@ -7,7 +7,7 @@ const Billboard = () => {
       <div className="content">
         <h1 className="slogan">Quick. Easy. Clean.</h1>
         <h2 className="highlight">Spotless Touch</h2>
-        <button className="button">Request Estimate</button>
+        <a href="#contactSubmit" className="link"><button className="button">Request Estimate</button></a>
       </div>
       </div>
     );

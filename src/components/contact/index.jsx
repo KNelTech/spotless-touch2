@@ -53,9 +53,9 @@ const Contact = () => {
         //Put data in some type of email template and then send it
     }
 
-    return (
+    return (<div className="contactContainer">
         <Stack spacing={2}>
-            <h1>Contact Us</h1>
+            <h1 className="contact-title">Contact Us</h1>
             <TextField
                 id="outlined-basic"
                 label="Name"
@@ -145,8 +145,8 @@ const Contact = () => {
                 variant="outlined"
                 onChange={handleZipCodeChange}
             />
-            <Button variant="contained" onClick={handleSubmit}>Submit</Button>
-        </Stack>
+            <Button id="contactSubmit" variant="contained" onClick={handleSubmit}>Submit</Button>
+        </Stack></div>
     );
   };
 
