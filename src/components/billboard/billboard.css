@@ -58,3 +58,10 @@
 .button:hover {
   background-color: #0056b3;
 }
+
+@media (max-width: 550px) {
+  .container {
+    background-image: url("/billboard2Mobile.webp");
+    background-position: center;
+  }
+}
