@@ -10,7 +10,7 @@ const Contact = () => {
     const [numBedrooms, setNumBedrooms] = useState(0);
     const [numBathrooms, setNumBathrooms] = useState(0);
     const [numOtherRooms, setNumOtherRooms] = useState(0);
-    const [cleaningType, setCleaningType] = useState(1);
+    const [cleaningType, setCleaningType] = useState('');
 
 
     const handleNameChange = (event) => {
@@ -54,8 +54,8 @@ const Contact = () => {
     }
 
     return (
-        <Stack className="contact-form" spacing={2}>
-            <h1 className="contact-title" id="contact">Contact Us</h1>
+        <Stack spacing={2}>
+            <h1>Contact Us</h1>
             <TextField
                 id="outlined-basic"
                 label="Name"
@@ -83,10 +83,12 @@ const Contact = () => {
                     label="Bedrooms"
                     onChange={handleNumBedroomsChange}
                 >
+                    <MenuItem value={0}>0</MenuItem>
                     <MenuItem value={1}>1</MenuItem>
                     <MenuItem value={2}>2</MenuItem>
                     <MenuItem value={3}>3</MenuItem>
                     <MenuItem value={4}>4</MenuItem>
+                    <MenuItem value={5}>5+</MenuItem>
                 </Select>
             </FormControl>
             <FormControl>
@@ -98,10 +100,12 @@ const Contact = () => {
                     label="How Many Bathrooms?"
                     onChange={handleNumBathroomsChange}
                 >
+                    <MenuItem value={0}>0</MenuItem>
                     <MenuItem value={1}>1</MenuItem>
                     <MenuItem value={2}>2</MenuItem>
                     <MenuItem value={3}>3</MenuItem>
                     <MenuItem value={4}>4</MenuItem>
+                    <MenuItem value={5}>5+</MenuItem>
                 </Select>
             </FormControl>
             <FormControl>
@@ -113,10 +117,12 @@ const Contact = () => {
                     label="Other Rooms?"
                     onChange={handleNumOtherRoomsChange}
                 >
+                    <MenuItem value={0}>0</MenuItem>
                     <MenuItem value={1}>1</MenuItem>
                     <MenuItem value={2}>2</MenuItem>
                     <MenuItem value={3}>3</MenuItem>
                     <MenuItem value={4}>4</MenuItem>
+                    <MenuItem value={5}>5+</MenuItem>
                 </Select>
             </FormControl>
             <FormControl>
@@ -147,7 +153,6 @@ const Contact = () => {
   //TODO: Debug or adjust values for each field as needed
   // Create email template and sending functionality
   // Fix formatting of form
-  // Mobile support
   // Add type validation to each field?
   // Add error handling for each field?
   
