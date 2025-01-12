@@ -54,8 +54,8 @@ const Contact = () => {
     }
 
     return (
-        <Stack spacing={2}>
-            <h1>Contact Us</h1>
+        <Stack className="contact-form" spacing={2}>
+            <h1 className="contact-title" id="contact">Contact Us</h1>
             <TextField
                 id="outlined-basic"
                 label="Name"
@@ -147,6 +147,7 @@ const Contact = () => {
   //TODO: Debug or adjust values for each field as needed
   // Create email template and sending functionality
   // Fix formatting of form
+  // Mobile support
   // Add type validation to each field?
   // Add error handling for each field?
   
