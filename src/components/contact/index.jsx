@@ -1,5 +1,9 @@
 import { useState } from 'react';
-import ReCaptcha from 'react-google-recaptcha';
+
+import {
+    GoogleReCaptchaProvider,
+    GoogleReCaptcha
+  } from 'react-google-recaptcha-v3';
 import { FormControl, InputLabel, Stack, TextField, Select, MenuItem, Button } from '@mui/material';
 import './contact.css';
 
@@ -14,7 +18,6 @@ const Contact = () => {
     const [numBathrooms, setNumBathrooms] = useState(0);
     const [numOtherRooms, setNumOtherRooms] = useState(0);
     const [cleaningType, setCleaningType] = useState('');
-
     const [isVerified, setIsVerified] = useState(false);
 
 
@@ -42,7 +45,7 @@ const Contact = () => {
     const handleZipCodeChange = (event) => {
         setZipCode(event.target.value);
     };
-    const handleRecaptchaChange = (value) => {
+    const handleRecaptchaVerify = (value) => {
         setIsVerified(true);
     };
     const handleSubmit = () => {
@@ -164,7 +167,10 @@ const Contact = () => {
                 sitekey={RECAPTCHA_SITE_KEY}
                 onChange={handleRecaptchaChange}
             />
-            <Button id="contactSubmit" variant="contained" onClick={handleSubmit}>Submit</Button>
+            <GoogleReCaptcha onVerify={handleRecaptchaVerify} />
+                <Button id="contactSubmit" variant="contained" color="primary" onClick={handleSubmit}>
+                    Submit
+                </Button>
         </Stack></div>
     );
   };
