@@ -9,6 +9,7 @@ const AccordionUsage = () => {
 return (
     <div className="accordion-container">
         <div>
+        <h1 className='servicesTitle' id="services">Services</h1>
             <Accordion>
                 <AccordionSummary
                     expandIcon={<ExpandMoreIcon />}
@@ -23,35 +24,13 @@ return (
                         <li>Basic cleaning essentials (dusting, vacuuming, sweeping, and mopping)</li>
                         <li>Kitchen counter cleaning</li>
                         <li>Bathroom sanitization (toilet, sink, tub/shower)</li>
-                        <li>Pricing (Starting at):</li>
-                        <li>Small home (1–2 bedrooms): $125</li>
-                        <li>Medium home (3–4 bedrooms): $150</li>
-                        <li>Large home (5+ bedrooms): $200</li>
-                        <li>Prices may vary for extra rooms or heavy clutter</li>
-                    </ul>
-                </AccordionDetails>
-            </Accordion>
-            <Accordion>
-                <AccordionSummary
-                    expandIcon={<ExpandMoreIcon />}
-                    aria-controls="panel2-content"
-                    id="panel2-header"
-                >
-                    <Typography component="span">Radiant Refresh</Typography>
-                </AccordionSummary>
-                <AccordionDetails>
-                    <ul className="accordianUL">
-                        <li>Go beyond the basics with detailed surface care</li>
-                        <li>Everything in Fresh Start, plus:</li>
-                        <li>Inside window cleaning (within safe reach)</li>
-                        <li>Baseboards and door-frame dusting</li>
                         <li>Exterior appliance cleaning</li>
                         <li>Garbage removal</li>
                         <li>Pricing (Starting at):</li>
-                        <li>Small home (1–2 bedrooms): $150</li>
+                        <li>Small home (1–2 bedrooms): $175</li>
                         <li>Medium home (3–4 bedrooms): $225</li>
-                        <li>Large home (5+ bedrooms): $300</li>
-                        <li>Prices may vary for extra rooms or heavy clutter</li>
+                        <li>Large home (5+ bedrooms): $250+</li>
+                        <li>*Basic estimates* pricing may be more or less depending on requirements</li>
                     </ul>
                 </AccordionDetails>
             </Accordion>
@@ -66,9 +45,10 @@ return (
                 <AccordionDetails>
                     <ul className="accordianUL">
                         <li>Comprehensive deep clean and organization for a spotless home</li>
-                        <li>Everything in Radiant Refresh, plus:</li>
+                        <li>Everything in Fresh Start, plus:</li>
                         <li>Deep cleaning/organizing of kitchen and bathrooms</li>
-                        <li>Oven and refrigerator interior cleaning</li>
+                        <li>Refrigerator interior cleaning</li>
+                        <li>Inside cabinet cleaning</li>
                         <li>Closet organization</li>
                         <li>Carpet deep cleaning</li>
                         <li>Under-furniture cleaning</li>
@@ -76,7 +56,7 @@ return (
                         <li>Small home (1–2 bedrooms): $250</li>
                         <li>Medium home (3–4 bedrooms): $375</li>
                         <li>Large home (5+ bedrooms): $500</li>
-                        <li>Prices may vary for extra rooms or heavy clutter</li>
+                        <li>*Basic estimates* pricing may be more or less depending on requirements</li>
                     </ul>
                 </AccordionDetails>
             </Accordion>
@@ -91,10 +71,15 @@ return (
                 <AccordionDetails>
                     <ul className="accordianUL">
                         <li>(Optional, can be added to any package)</li>
-                        <li>Inside cabinet cleaning</li>
+                        <li>Inside window cleaning (within safe reach)</li>
+                        <li>Laundry</li>
+                        <li>Grocery pickup</li>
+                        <li>Wall washing</li>
+                        <li>Oven interior</li>
+                        <li>Room organization</li>
                         <li>Carpet steam cleaning or upholstery cleaning</li>
                         <li>Carpet deodorizing</li>
-                        <li>Additional tasks upon request</li>
+                        <li>Additional tasks upon request at time of quote</li>
                     </ul>
                 </AccordionDetails>
             </Accordion>

@@ -1,7 +1,8 @@
 import PropTypes from 'prop-types';
 
 const TextBox = ({ children, className, readOnly }) => {
-    return (
+    return (<>
+        <h1 className='aboutTitle' id="about">About</h1>
         <div
             className={className}
             contentEditable={!readOnly}
@@ -9,6 +10,7 @@ const TextBox = ({ children, className, readOnly }) => {
         >
             {children}
         </div>
+        </>
     );
 };
 
