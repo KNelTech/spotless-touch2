@@ -1,6 +1,9 @@
 import { useState } from 'react';
+import ReCaptcha from 'react-google-recaptcha';
 import { FormControl, InputLabel, Stack, TextField, Select, MenuItem, Button } from '@mui/material';
 import './contact.css';
+
+const RECAPTCHA_SITE_KEY = "6LclmLUqAAAAAP4DC3Ru-GJJLQ2So3NRVKAq6Sai";
 
 const Contact = () => {
     const [name, setName] = useState('');
@@ -11,6 +14,8 @@ const Contact = () => {
     const [numBathrooms, setNumBathrooms] = useState(0);
     const [numOtherRooms, setNumOtherRooms] = useState(0);
     const [cleaningType, setCleaningType] = useState('');
+
+    const [isVerified, setIsVerified] = useState(false);
 
 
     const handleNameChange = (event) => {
@@ -37,6 +42,9 @@ const Contact = () => {
     const handleZipCodeChange = (event) => {
         setZipCode(event.target.value);
     };
+    const handleRecaptchaChange = (value) => {
+        setIsVerified(true);
+    };
     const handleSubmit = () => {
         const data = {
             name,
@@ -49,6 +57,13 @@ const Contact = () => {
             cleaningType
         };
         console.log(data);
+
+        if (!isVerified) {
+            alert("Please verify that you are not a robot.");
+            return;
+        }
+
+
 
         //Put data in some type of email template and then send it
     }
@@ -144,6 +159,10 @@ const Contact = () => {
                 label="Zip Code"
                 variant="outlined"
                 onChange={handleZipCodeChange}
+            />
+            <ReCaptcha
+                sitekey={RECAPTCHA_SITE_KEY}
+                onChange={handleRecaptchaChange}
             />
             <Button id="contactSubmit" variant="contained" onClick={handleSubmit}>Submit</Button>
         </Stack></div>
