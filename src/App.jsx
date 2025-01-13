@@ -10,8 +10,6 @@ import '@fontsource/roboto/400.css';
 import '@fontsource/roboto/500.css';
 import '@fontsource/roboto/700.css';
 
-import { GoogleReCaptchaProvider } from 'react-google-recaptcha-v3';
-
 
 function App() {
   return (

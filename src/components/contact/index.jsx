@@ -1,13 +1,7 @@
 import { useState } from 'react';
-
-import {
-    GoogleReCaptchaProvider,
-    GoogleReCaptcha
-  } from 'react-google-recaptcha-v3';
+import { GoogleReCaptcha } from 'react-google-recaptcha-v3';
 import { FormControl, InputLabel, Stack, TextField, Select, MenuItem, Button } from '@mui/material';
 import './contact.css';
-
-const RECAPTCHA_SITE_KEY = "6LclmLUqAAAAAP4DC3Ru-GJJLQ2So3NRVKAq6Sai";
 
 const Contact = () => {
     const [name, setName] = useState('');
@@ -18,6 +12,8 @@ const Contact = () => {
     const [numBathrooms, setNumBathrooms] = useState(0);
     const [numOtherRooms, setNumOtherRooms] = useState(0);
     const [cleaningType, setCleaningType] = useState('');
+
+    const [recaptchaToken, setRecaptchaToken] = useState('');
     const [isVerified, setIsVerified] = useState(false);
 
 
@@ -45,8 +41,8 @@ const Contact = () => {
     const handleZipCodeChange = (event) => {
         setZipCode(event.target.value);
     };
-    const handleRecaptchaVerify = (value) => {
-        setIsVerified(true);
+    const handleRecaptchaVerify = (token) => {
+        setRecaptchaToken(token);
     };
     const handleSubmit = () => {
         const data = {
@@ -162,10 +158,6 @@ const Contact = () => {
                 label="Zip Code"
                 variant="outlined"
                 onChange={handleZipCodeChange}
-            />
-            <ReCaptcha
-                sitekey={RECAPTCHA_SITE_KEY}
-                onChange={handleRecaptchaChange}
             />
             <GoogleReCaptcha onVerify={handleRecaptchaVerify} />
                 <Button id="contactSubmit" variant="contained" color="primary" onClick={handleSubmit}>
