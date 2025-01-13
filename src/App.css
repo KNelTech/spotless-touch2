@@ -2,7 +2,7 @@ main {
   padding: 20px;
 }
 
-.about {
+/* .about {
   background-color: #e8efff;
   padding: 20px;
   border-radius: 20px;
@@ -12,6 +12,18 @@ main {
   max-width: 700px;
   margin: 0 auto;
   padding: 20px;
+} */
+
+.about {
+  background-color: #eef3ff; /* Lighter blue background matching image */
+  padding: 24px 32px; /* Increased padding for better spacing */
+  border-radius: 16px; /* Slightly smaller radius to match design */
+  text-align: center;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08); /* Softer, more subtle shadow */
+  margin: 0 auto 48px; /* Combined margin declarations */
+  max-width: 800px; /* Slightly wider to match image */
+  line-height: 1.5; /* Better text readability */
+  color: #1a1a1a; /* Darker text for better contrast */
 }
 
 .servicesTitle {

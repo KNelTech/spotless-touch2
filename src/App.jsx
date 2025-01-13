@@ -1,6 +1,6 @@
 import NavBar from './components/NavBar';
 import Billboard from './components/billboard';
-//import Services from './components/services';
+
 import Contact from './components/contact';
 import TextBox from './components/textBox';
 import AccordionUsage from './components/accordionService';
