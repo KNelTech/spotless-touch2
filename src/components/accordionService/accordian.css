@@ -73,7 +73,6 @@
   left: 0;
 }
 
-/* Pricing items styling for each accordion */
 .accordion-container > div > :nth-child(2) .accordianUL li:nth-child(n + 7),
 .accordion-container > div > :nth-child(3) .accordianUL li:nth-child(n + 9) {
   background-color: #e5f2ff;
