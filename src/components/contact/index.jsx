@@ -19,7 +19,7 @@ const Contact = () => {
     const [numOtherRooms, setNumOtherRooms] = useState(0);
     const [cleaningType, setCleaningType] = useState('');
 
-    const [_, setRecaptchaToken] = useState('');
+    const [setRecaptchaToken] = useState('');
 
     const [isAlertOpen, setIsAlertOpen] = useState(false);
     const [alertSeverity, setAlertSeverity] = useState('success');
