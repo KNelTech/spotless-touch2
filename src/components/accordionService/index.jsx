@@ -26,7 +26,7 @@ return (
                         <li>Bathroom sanitization (toilet, sink, tub/shower)</li>
                         <li>Exterior appliance cleaning</li>
                         <li>Garbage removal</li>
-                        <li>Pricing (Starting at):</li>
+                        <li>Pricing (Estimate):</li>
                         <li>Small home (1–2 bedrooms): $175</li>
                         <li>Medium home (3–4 bedrooms): $225</li>
                         <li>Large home (5+ bedrooms): $250+</li>
@@ -52,7 +52,7 @@ return (
                         <li>Closet organization</li>
                         <li>Carpet deep cleaning</li>
                         <li>Under-furniture cleaning</li>
-                        <li>Pricing (Starting at):</li>
+                        <li>Pricing (Estimate):</li>
                         <li>Small home (1–2 bedrooms): $250</li>
                         <li>Medium home (3–4 bedrooms): $375</li>
                         <li>Large home (5+ bedrooms): $500</li>
