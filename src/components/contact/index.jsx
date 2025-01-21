@@ -32,7 +32,6 @@ const Contact = () => {
     const [zipCodeError, setZipCodeError] = useState(false);
     const [numTotalRoomsError, setNumTotalRoomsError] = useState(false);
     const [cleaningTypeError, setCleaningTypeError] = useState(false);
-    const [notesError, setNotesError] = useState(false);
 
 
     const handleNameChange = (event) => {
@@ -71,13 +70,12 @@ const Contact = () => {
     };
     const handleZipCodeChange = (event) => {
         const zipCode = event.target.value;
-        if (!isNaN(zipCode)) {
+        if (!isNaN(zipCode) && zipCode.length <= 5) {
             setZipCodeError(false);
             setZipCode(zipCode);
         }
     };
     const handleNotesChange = (event) => {
-        setNotesError(false);
         setNotes(event.target.value);
     };
 
@@ -85,10 +83,12 @@ const Contact = () => {
     //     setRecaptchaToken(token);
     // };
     const verifyForm = () => {
+        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
         const nameInvalid = isEmpty(name);
-        const emailInvalid = isEmpty(email);
+        const emailInvalid = isEmpty(email) || !emailRegex.test(email);
         const phoneInvalid = isEmpty(phone);
-        const zipCodeInvalid = isEmpty(zipCode);
+        const zipCodeInvalid = isEmpty(zipCode) || zipCode.length !== 5;
         const numTotalRoomsInvalid = Math.max(numBedrooms, numBathrooms, numOtherRooms) === 0;
         const cleaningTypeInvalid = isEmpty(cleaningType);
 
@@ -265,7 +265,6 @@ const Contact = () => {
                     label="Any comments, concerns, or anything else we should know?"
                     multiline
                     rows={3}
-                    error={notesError}
                     variant="outlined"
                     value={notes}
                     onChange={handleNotesChange}
