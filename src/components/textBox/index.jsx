@@ -3,11 +3,12 @@ import PropTypes from 'prop-types';
 const TextBox = ({
     children,
     className = 'text-box',
-    readOnly = true
+    readOnly = true,
+    title = 'About'
 }) => {
     return (
         <>
-            <h1 className='aboutTitle' id="about">About</h1>
+            <h1 className='aboutTitle' id="about">{title}</h1>
             <div
                 className={className}
                 contentEditable={!readOnly}
@@ -20,9 +21,10 @@ const TextBox = ({
 };
 
 TextBox.propTypes = {
-  children: PropTypes.string.isRequired,
-  className: PropTypes.string,
-  readOnly: PropTypes.bool,
+    children: PropTypes.string.isRequired,
+    className: PropTypes.string,
+    readOnly: PropTypes.bool,
+    title: PropTypes.string
 };
 
 export default TextBox;
