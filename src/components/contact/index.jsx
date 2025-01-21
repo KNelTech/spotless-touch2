@@ -18,6 +18,7 @@ const Contact = () => {
     const [numBathrooms, setNumBathrooms] = useState(0);
     const [numOtherRooms, setNumOtherRooms] = useState(0);
     const [cleaningType, setCleaningType] = useState('');
+    const [notes, setNotes] = useState('');
 
     // const [_, setRecaptchaToken] = useState('');
 
@@ -31,6 +32,7 @@ const Contact = () => {
     const [zipCodeError, setZipCodeError] = useState(false);
     const [numTotalRoomsError, setNumTotalRoomsError] = useState(false);
     const [cleaningTypeError, setCleaningTypeError] = useState(false);
+    const [notesError, setNotesError] = useState(false);
 
 
     const handleNameChange = (event) => {
@@ -74,6 +76,11 @@ const Contact = () => {
             setZipCode(zipCode);
         }
     };
+    const handleNotesChange = (event) => {
+        setNotesError(false);
+        setNotes(event.target.value);
+    };
+
     // const handleRecaptchaVerify = (token) => {
     //     setRecaptchaToken(token);
     // };
@@ -92,6 +99,7 @@ const Contact = () => {
             setZipCodeError(zipCodeInvalid);
             setNumTotalRoomsError(numTotalRoomsInvalid);
             setCleaningTypeError(cleaningTypeInvalid);
+
             
             setAlertSeverity('error');
             setAlertMessage('Please fill out all required fields and enter at least one room.');
@@ -112,7 +120,8 @@ const Contact = () => {
             Bedrooms: ${numBedrooms}\n
             Bathrooms: ${numBathrooms}\n
             Other Rooms: ${numOtherRooms}\n
-            Cleaning Type: ${cleaningType}`;
+            Cleaning Type: ${cleaningType}\n
+            Notes: ${notes}`;
 
         emailjs.send(
             EMAIL_JS_SERVICE_ID,
@@ -137,6 +146,7 @@ const Contact = () => {
             setNumBathrooms(0);
             setNumOtherRooms(0);
             setCleaningType('');
+            setNotes('');
         }, (error) => {
             console.error("Failed to send email:", error);
             setAlertSeverity('error');
@@ -149,7 +159,7 @@ const Contact = () => {
     return (
         <div className="contactContainer">
             <Stack spacing={2}>
-                <h1 className="contact-title">Contact Us</h1>
+                <h1 className="contact-title">Request a Quote</h1>
                 <TextField
                     id="outlined-basic"
                     label="Name"
@@ -249,6 +259,16 @@ const Contact = () => {
                     error={zipCodeError}
                     value={zipCode}
                     onChange={handleZipCodeChange}
+                />
+                <TextField
+                    id="outlined-basic"
+                    label="Any comments, concerns, or anything else we should know?"
+                    multiline
+                    rows={3}
+                    error={notesError}
+                    variant="outlined"
+                    value={notes}
+                    onChange={handleNotesChange}
                 />
                 {/* <GoogleReCaptcha onVerify={handleRecaptchaVerify} /> */}
                 <Button id="contactSubmit" variant="contained" color="primary" onClick={handleSubmit}>
