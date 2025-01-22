@@ -1,8 +1,8 @@
-export const ABOUT_TEXT = "Spotless Touch is more than a cleaning service, we're your solution for a sparkling home or business. We combine high-quality cleaning techniques with personalized care to give your space the attention it deserves. Experience the difference with Spotless Touch today!";
+export const ABOUT_TEXT = "Spotless Touch isn’t just a cleaning and junk removal service, we’re your go-to solution for a spotless home or business. As a family-owned business, we prioritize your time and space, delivering high-quality results with personalized care. Let Spotless Touch simplify your life today!";
 
 export const BUSINESS_TEXT = (
   <>
-    For businesses looking for tailored cleaning solutions, please email us directly at{' '}
+    For businesses looking for tailored cleaning solutions or junk removal, please email us directly at{' '}
     <span className="bizInfo">
       <a href="mailto:spotlesstouchofficial@gmail.com">
         spotlesstouchofficial@gmail.com
