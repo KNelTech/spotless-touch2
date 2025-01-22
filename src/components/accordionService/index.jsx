@@ -46,7 +46,7 @@ return (
                     <ul className="accordianUL">
                         <li>Comprehensive deep clean and organization for a spotless home</li>
                         <li>Everything in Fresh Start, plus:</li>
-                        <li>Deep cleaning/organizing of kitchen and bathrooms</li>
+                        <li>Deep cleaning / organizing of kitchen and bathrooms</li>
                         <li>Refrigerator interior cleaning</li>
                         <li>Inside cabinet cleaning</li>
                         <li>Closet organization</li>
@@ -66,14 +66,15 @@ return (
                     aria-controls="panel4-content"
                     id="panel4-header"
                 >
-                    <Typography component="span">Add-On Services</Typography>
+                    <Typography component="span">Add-On / Other Services</Typography>
                 </AccordionSummary>
                 <AccordionDetails>
                     <ul className="accordianUL">
-                        <li>(Optional, can be added to any package)</li>
-                        <li>Inside window cleaning (within safe reach)</li>
+                        <li>junk removal</li>
+                        <li>Move out clean</li>
+                        <li>Post construction clean</li>
+                        <li>Inside / outside window cleaning (within safe reach)</li>
                         <li>Laundry</li>
-                        <li>Grocery pickup</li>
                         <li>Wall washing</li>
                         <li>Oven interior</li>
                         <li>Room organization</li>
