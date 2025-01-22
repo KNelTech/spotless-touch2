@@ -1,5 +1,4 @@
 import { useState } from 'react';
-// import { GoogleReCaptcha } from 'react-google-recaptcha-v3';
 import emailjs from '@emailjs/browser';
 import isEmpty from 'lodash/isEmpty';
 import { Alert, FormControl, InputLabel, Stack, TextField, Select, MenuItem, Button } from '@mui/material';
@@ -19,13 +18,9 @@ const Contact = () => {
     const [numOtherRooms, setNumOtherRooms] = useState(0);
     const [cleaningType, setCleaningType] = useState('');
     const [notes, setNotes] = useState('');
-
-    // const [_, setRecaptchaToken] = useState('');
-
     const [isAlertOpen, setIsAlertOpen] = useState(false);
     const [alertSeverity, setAlertSeverity] = useState('success');
     const [alertMessage, setAlertMessage] = useState('');
-
     const [nameError, setNameError] = useState(false);
     const [emailError, setEmailError] = useState(false);
     const [phoneError, setPhoneError] = useState(false);
@@ -78,10 +73,6 @@ const Contact = () => {
     const handleNotesChange = (event) => {
         setNotes(event.target.value);
     };
-
-    // const handleRecaptchaVerify = (token) => {
-    //     setRecaptchaToken(token);
-    // };
     const verifyForm = () => {
         const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
@@ -269,7 +260,6 @@ const Contact = () => {
                     value={notes}
                     onChange={handleNotesChange}
                 />
-                {/* <GoogleReCaptcha onVerify={handleRecaptchaVerify} /> */}
                 <Button id="contactSubmit" variant="contained" color="primary" onClick={handleSubmit}>
                     Submit
                 </Button>
