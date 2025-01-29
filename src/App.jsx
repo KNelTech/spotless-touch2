@@ -4,6 +4,7 @@ import Contact from './components/contact';
 import TextBox from './components/textBox';
 import AccordionUsage from './components/accordionService';
 import { ABOUT_TEXT, BUSINESS_TEXT } from './content/textContent.jsx';
+import Footer from './components/footer';
 import './App.css';
 import '@fontsource/roboto/300.css';
 import '@fontsource/roboto/400.css';
@@ -25,6 +26,7 @@ function App() {
           {BUSINESS_TEXT}
         </TextBox>
         <Contact />
+        <Footer />
       </main>
     </div>
   );
