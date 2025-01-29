@@ -13,6 +13,7 @@ const TextBox = ({
                 className={className}
                 contentEditable={!readOnly}
                 suppressContentEditableWarning={true}
+                style={{ whiteSpace: 'pre-wrap' }}
             >
                 {children}
             </div>
