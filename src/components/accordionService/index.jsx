@@ -27,8 +27,8 @@ return (
                         <li>Exterior appliance cleaning</li>
                         <li>Garbage removal</li>
                         <li>Pricing (Estimate):</li>
-                        <li>Small home (1–2 bedrooms): $175</li>
-                        <li>Medium home (3–4 bedrooms): $225</li>
+                        <li>Small home (1–2 bedrooms): $150</li>
+                        <li>Medium home (3–4 bedrooms): $200</li>
                         <li>Large home (5+ bedrooms): $250+</li>
                         <li>*Basic estimates* pricing may be more or less depending on requirements</li>
                     </ul>
@@ -53,9 +53,9 @@ return (
                         <li>Carpet deep cleaning</li>
                         <li>Under-furniture cleaning</li>
                         <li>Pricing (Estimate):</li>
-                        <li>Small home (1–2 bedrooms): $250</li>
-                        <li>Medium home (3–4 bedrooms): $375</li>
-                        <li>Large home (5+ bedrooms): $500</li>
+                        <li>Small home (1–2 bedrooms): $225</li>
+                        <li>Medium home (3–4 bedrooms): $300</li>
+                        <li>Large home (5+ bedrooms): $400</li>
                         <li>*Basic estimates* pricing may be more or less depending on requirements</li>
                     </ul>
                 </AccordionDetails>
