@@ -25,6 +25,21 @@
         send_to: "AW-16840933302/ewBcCOP26pgaELb_sN4-",
       });
     </script>
+    <!-- Event snippet for Page view conversion page-->
+    <script>
+      function gtag_report_conversion(url) {
+        var callback = function () {
+          if (typeof url != "undefined") {
+            window.location = url;
+          }
+        };
+        gtag("event", "conversion", {
+          send_to: "AW-16840933302/ewBcCOP26pgaELb_sN4-",
+          event_callback: callback,
+        });
+        return false;
+      }
+    </script>
 
     <meta
       name="description"

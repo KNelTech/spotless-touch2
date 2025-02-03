@@ -104,6 +104,11 @@ const Contact = () => {
             return;
         }
 
+         // Call Google conversion tracking
+        if (typeof window.gtag_report_conversion === "function") {
+          window.gtag_report_conversion();
+        }
+
         const message = 
             `Email: ${email}\n
             Phone: ${phone}\n
