@@ -1,4 +1,4 @@
-export const ABOUT_TEXT = "Spotless Touch isn’t just a cleaning and junk removal service, we’re your go-to solution for a spotless home or business. As a family-owned business, we prioritize your time and space, delivering high-quality results with personalized care. Let Spotless Touch simplify your life today!";
+export const ABOUT_TEXT = "Spotless Touch isn’t just a cleaning and window service, we’re your go-to solution for a spotless home or business. As a family-owned business, we prioritize your time and space, delivering high-quality results with personalized care. Let Spotless Touch simplify your life today!";
 
 export const PRIVACY_POLICY_TEXT = `Effective Date: 01/28/2025
 
@@ -73,7 +73,7 @@ By using our services, you consent to our Privacy Policy.`;
 
 export const BUSINESS_TEXT = (
   <>
-    For businesses looking for tailored cleaning solutions or junk removal, please email us directly at{' '}
+    For businesses looking for tailored cleaning solutions or window cleaning, please email us directly at{' '}
     <span className="bizInfo">
       <a href="mailto:spotlesstouchofficial@gmail.com">
         spotlesstouchofficial@gmail.com

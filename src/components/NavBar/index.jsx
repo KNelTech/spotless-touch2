@@ -12,7 +12,7 @@ const NavBar = () => {
     <nav className="nav">
       <div className="logo">
         <img src="/Logo.png" alt="Logo" className="logoImage"/>
-        <span className="companyName">Spotless Touch</span>
+        <span className="companyName">Spotless Touch Cleaning</span>
       </div>
       <div className="hamburger" onClick={toggleMenu}>
         <div></div>
