@@ -86,3 +86,28 @@ export const BUSINESS_TEXT = (
     . We&apos;ll provide a customized quote to fit your specific needs.
   </>
 );
+
+/* Image URLs */
+export const mobileImages = [
+  '/STWork2.png',  
+  '/STWork8.png', 
+  '/STWork9.png', 
+   '/STWork10.png',
+
+];
+
+export const desktopImages = [
+  '/STWork2.png',
+  '/STWork8.png',
+  '/STWork9.png',
+  '/STWork10.png',
+  '/STWork12.png',
+];
+
+export const transformStyles = [
+  "rotate(5deg) translate(-150px)",
+  "rotate(0deg) translate(-70px)",
+  "rotate(-5deg)",
+  "rotate(5deg) translate(70px)",
+  "rotate(-5deg) translate(150px)"
+];
